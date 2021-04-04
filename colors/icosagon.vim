@@ -1,5 +1,12 @@
 " the default scheme is 'light'
 hi clear
+hi clear SpellBad
+hi clear SpellCap
+hi clear Error
+hi clear ErrorMsg
+hi clear CursorLine
+hi clear CursorLineNr
+
 let g:colors_name = "icosagon"
 
 " #FF0099
@@ -109,14 +116,6 @@ let g:colors_name = "icosagon"
 "
 " *Todo           o 特別な注意が必要なもの; 大抵はTODO FIXME XXXなどのキーワード
 "
-if &background == "dark"
-    hi Normal   guifg=#ffffff guibg=#000011 gui=none
-    hi Comment  guifg=#555577
-else "light
-    hi Normal   guifg=#000000 guibg=#eeeeff gui=none
-    hi Comment  guifg=#aaaacc
-endif
-
 hi PreProc          guifg=#00bbff               gui=bold
 hi Include          guifg=#ff0088               gui=bold
 hi Define           guifg=#00e0a3               gui=bold
@@ -167,8 +166,6 @@ hi DiffChange                     guibg=#000000
 hi DiffText         guifg=#e0e0e0
 hi DiffDelete       guifg=#484848
 
-hi clear SpellBad
-hi clear SpellCap
 hi SpellBad         guisp=#ff0088 guibg=NONE gui=undercurl
 hi SpellCap         guisp=#476afc guibg=NONE gui=undercurl
 hi SpellLocal       guisp=#48b040 guibg=NONE gui=undercurl
@@ -177,8 +174,6 @@ hi SpellRare        guisp=#eeeeee guibg=NONE gui=undercurl
 "UI
 hi Search           guifg=#000000 guibg=#777777 gui=bold
 hi IncSearch        guifg=#000000 guibg=#777777 gui=none
-hi clear Error
-hi clear ErrorMsg
 hi Error            guifg=#eeeeee guibg=#ff0088 gui=bold,underline
 hi ErrorMsg         guifg=#eeeeee guibg=#ff0088 gui=bold
 hi WarningMsg       guifg=#000000 guibg=#fff633
@@ -186,8 +181,6 @@ hi WildMenu         guifg=#000000 guibg=#000011
 hi Question         guifg=#000000 guibg=#000011
 hi MoreMsg          guifg=#000000 guibg=#000011
 hi ModeMsg          guifg=#000000
-hi clear CursorLine
-hi clear CursorLineNr
 hi Cursor           guibg=#d0d0d0
 hi CursorLine       guibg=#222222               gui=none
 hi CursorLineNr     guifg=#d0d0d0               gui=bold
@@ -212,3 +205,50 @@ hi Title            guifg=#d0d0d0               gui=bold
 hi TabLine          guifg=#afd700               gui=none
 hi TabLineSel       guifg=#005f00               gui=none
 hi TabLineFill      guifg=#303030               gui=none
+
+if &background == "dark"
+    hi Normal     guifg=#ffffff guibg=#000011 gui=none
+    hi Comment    guifg=#555577
+else "light
+    hi Normal     guifg=#000000 guibg=#eeeeff gui=none
+    hi Comment    guifg=#aaaacc
+
+    hi Include          guifg=#cc0055               gui=bold
+    hi Statement        guifg=#cc0055               gui=bold
+    hi Conditional      guifg=#cc0055               gui=bold
+    hi Repeat           guifg=#cc0055               gui=bold
+    hi Label            guifg=#cc0055               gui=bold
+    hi Keyword          guifg=#cc0055               gui=none
+    hi Exception        guifg=#cc0055               gui=bold
+    hi Operator         guifg=#cc0055               gui=none
+    hi StorageClass     guifg=#cc0055               gui=italic
+
+
+    hi Type             guifg=#0055cc               gui=none
+    hi Structure        guifg=#0055cc               gui=none
+    hi Typedef          guifg=#0055cc
+    hi Function         guifg=#0099cc               gui=none
+
+    hi String     guifg=#998811
+    hi Character  guifg=#998811
+    hi Number     guifg=#998811
+    hi Boolean    guifg=#998811
+    hi Float      guifg=#998811
+
+    hi Constant         guifg=#9010cc               gui=bold
+    hi Special          guifg=#9010cc               gui=none
+    hi SpecialChar      guifg=#9010cc
+    hi SpecialKey       guifg=#9010cc
+    hi Tag              guifg=#9010cc               gui=bold
+    hi Delimiter        guifg=#9010cc               gui=none
+    hi SpecialComment   guifg=#9010cc               gui=bold
+    hi Debug            guifg=#9010cc               gui=bold
+
+    hi Cursor           guibg=#d0d0d0
+    hi CursorLine       guibg=#dddddd               gui=none
+    hi CursorLineNr     guibg=#202020               gui=bold
+    hi CursorColumn     guibg=#aaaaaa
+
+endif
+
+
