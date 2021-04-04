@@ -124,11 +124,11 @@ hi Macro            guifg=#00e0a3               gui=none
 hi PreCondit        guifg=#00e0a3               gui=none
 
 hi Constant         guifg=#c030ff               gui=bold
-hi String           guifg=#fff63f
-hi Character        guifg=#fff63f
-hi Number           guifg=#fff63f
-hi Boolean          guifg=#fff63f
-hi Float            guifg=#fff63f
+hi String           guifg=#ddff33
+hi Character        guifg=#ddff33
+hi Number           guifg=#ddff33
+hi Boolean          guifg=#ddff33
+hi Float            guifg=#ddff33
 
 hi Identifier       guifg=#29a3ac               gui=none
 hi Function         guifg=#00bbff               gui=none
@@ -162,33 +162,36 @@ hi Todo             guifg=#fff63f               gui=bold
 
 hi Directory        guifg=#b5b5b5               gui=bold
 
-hi DiffAdd                        guibg=#384b38
-hi DiffChange                     guibg=#383a4b
+hi DiffAdd                        guibg=#000000
+hi DiffChange                     guibg=#000000
 hi DiffText         guifg=#e0e0e0
 hi DiffDelete       guifg=#484848
 
-hi SpellBad         guisp=#e83030 gui=undercurl
-hi SpellCap         guisp=#476afc gui=undercurl
-hi SpellLocal       guisp=#48b040 gui=undercurl
-hi SpellRare        guisp=#eeeeee gui=undercurl
+hi clear SpellBad
+hi clear SpellCap
+hi SpellBad         guisp=#ff0088 guibg=NONE gui=undercurl
+hi SpellCap         guisp=#476afc guibg=NONE gui=undercurl
+hi SpellLocal       guisp=#48b040 guibg=NONE gui=undercurl
+hi SpellRare        guisp=#eeeeee guibg=NONE gui=undercurl
 
 "UI
-hi Search           guifg=#000000               gui=bold
-hi IncSearch        guifg=#f8cf00
-hi Error            guifg=#e5a5a5               gui=bold,underline
-hi ErrorMsg         guifg=#f5c5c5               gui=bold
-hi WarningMsg       guifg=#edc830               gui=none
-hi WildMenu         guifg=#000000               gui=none
-hi Question         guifg=#000000               gui=none
-hi MoreMsg          guifg=#000000               gui=none
+hi Search           guifg=#000000 guibg=#777777 gui=bold
+hi IncSearch        guifg=#000000 guibg=#777777 gui=none
+hi clear Error
+hi clear ErrorMsg
+hi Error            guifg=#eeeeee guibg=#ff0088 gui=bold,underline
+hi ErrorMsg         guifg=#eeeeee guibg=#ff0088 gui=bold
+hi WarningMsg       guifg=#000000 guibg=#fff633
+hi WildMenu         guifg=#000000 guibg=#000011
+hi Question         guifg=#000000 guibg=#000011
+hi MoreMsg          guifg=#000000 guibg=#000011
 hi ModeMsg          guifg=#000000
 hi clear CursorLine
 hi clear CursorLineNr
-hi Cursor           guibg=#d80000
+hi Cursor           guibg=#d0d0d0
+hi CursorLine       guibg=#222222               gui=none
 hi CursorLineNr     guifg=#d0d0d0               gui=bold
-hi CursorLine       guibg=#4a4a4c               gui=none
 hi CursorColumn     guibg=#4a4a4c
-
 hi MatchParen       guifg=#202020               gui=none
 hi Visual           guibg=#3a4d6e               gui=none
 hi VisualNOS                                    gui=none
@@ -196,7 +199,7 @@ hi Pmenu            guifg=#b5b5b5 guibg=#000000
 hi PmenuSel         guifg=#ffffff guibg=#777777 gui=none
 hi PmenuSbar                      guibg=#a0a0a0
 hi PmenuThumb                     guibg=#555555
-hi SignColumn       guifg=#A6E22E
+hi SignColumn       guifg=#A6E22E guibg=#000011
 hi FoldColumn       guifg=#b0b8c0               gui=bold
 hi Folded           guifg=#727780               gui=none
 hi NonText          guifg=#958b7f               gui=none
