@@ -116,49 +116,11 @@ let g:colors_name = "icosagon"
 "
 " *Todo           o 特別な注意が必要なもの; 大抵はTODO FIXME XXXなどのキーワード
 "
-hi PreProc          guifg=#00bbff               gui=bold
-hi Include          guifg=#ff0088               gui=bold
-hi Define           guifg=#00e0a3               gui=bold
-hi Macro            guifg=#00e0a3               gui=none
-hi PreCondit        guifg=#00e0a3               gui=none
 
-hi Constant         guifg=#c030ff               gui=bold
-hi String           guifg=#ddff33
-hi Character        guifg=#ddff33
-hi Number           guifg=#ddff33
-hi Boolean          guifg=#ddff33
-hi Float            guifg=#ddff33
-
-hi Identifier       guifg=#29a3ac               gui=none
-hi Function         guifg=#00bbff               gui=none
-
-hi Statement        guifg=#ff0088               gui=bold
-hi Conditional      guifg=#ff0088               gui=bold
-hi Repeat           guifg=#ff0088               gui=bold
-hi Label            guifg=#ff0088               gui=bold
-hi Keyword          guifg=#ff0088               gui=none
-hi Exception        guifg=#ff0088               gui=bold
-hi Operator         guifg=#ff0088               gui=none
-
-hi Type             guifg=#0088ff               gui=none
-hi Structure        guifg=#0088ff               gui=none
-hi Typedef          guifg=#0088ff
-hi StorageClass     guifg=#ff0088               gui=italic
 "#ff9900
 "#00e0a3
-hi Special          guifg=#c030ff               gui=none
-hi SpecialChar      guifg=#c030ff
-hi SpecialKey       guifg=#c030ff
-hi Tag              guifg=#c030ff               gui=bold
-hi Delimiter        guifg=#c030ff               gui=none
-hi SpecialComment   guifg=#c030ff               gui=bold
-hi Debug            guifg=#c030ff               gui=bold
-
-hi Underlined       guifg=NONE                  gui=underline
-
+"
 "Misc
-hi Todo             guifg=#fff63f               gui=bold
-
 hi Directory        guifg=#b5b5b5               gui=bold
 
 hi DiffAdd                        guibg=#000000
@@ -207,48 +169,106 @@ hi TabLineSel       guifg=#005f00               gui=none
 hi TabLineFill      guifg=#303030               gui=none
 
 if &background == "dark"
-    hi Normal     guifg=#ffffff guibg=#000011 gui=none
+    hi Normal     guifg=#ffffff guibg=#111122 gui=none
     hi Comment    guifg=#555577
+    hi Todo       guifg=#fff63f               gui=bold
+
+    hi PreProc          guifg=#00bbff               gui=bold
+    hi Include          guifg=#ff0088               gui=bold
+    hi Define           guifg=#00e0a3               gui=bold
+    hi Macro            guifg=#00e0a3               gui=none
+    hi PreCondit        guifg=#00e0a3               gui=none
+
+    hi Constant         guifg=#c030ff               gui=bold
+    hi String           guifg=#ddff33
+    hi Character        guifg=#ddff33
+    hi Number           guifg=#ddff33
+    hi Boolean          guifg=#ddff33
+    hi Float            guifg=#ddff33
+
+    hi Identifier       guifg=#29a3ac               gui=none
+    hi Function         guifg=#00bbff               gui=none
+
+    hi Statement        guifg=#ff0088               gui=bold
+    hi Conditional      guifg=#ff0088               gui=bold
+    hi Repeat           guifg=#ff0088               gui=bold
+    hi Label            guifg=#ff0088               gui=bold
+    hi Keyword          guifg=#ff0088               gui=none
+    hi Exception        guifg=#ff0088               gui=bold
+    hi Operator         guifg=#ff0088               gui=none
+
+    hi Type             guifg=#0088ff               gui=none
+    hi Structure        guifg=#0088ff               gui=none
+    hi Typedef          guifg=#0088ff
+    hi StorageClass     guifg=#ff0088               gui=italic
+
+    hi Special          guifg=#c030ff               gui=none
+    hi SpecialChar      guifg=#c030ff
+    hi SpecialKey       guifg=#c030ff
+    hi Tag              guifg=#c030ff               gui=bold
+    hi Delimiter        guifg=#c030ff               gui=none
+    hi SpecialComment   guifg=#c030ff               gui=bold
+    hi Debug            guifg=#c030ff               gui=bold
+
+    hi Underlined       guifg=NONE                  gui=underline
+
+
 else "light
-    hi Normal     guifg=#000000 guibg=#eeeeff gui=none
-    hi Comment    guifg=#aaaacc
+    hi Normal     guifg=#111111 guibg=#ddddee gui=none
+    hi Comment    guifg=#666688
+    hi Todo       guifg=#777710               gui=bold
 
-    hi Include          guifg=#cc0055               gui=bold
-    hi Statement        guifg=#cc0055               gui=bold
-    hi Conditional      guifg=#cc0055               gui=bold
-    hi Repeat           guifg=#cc0055               gui=bold
-    hi Label            guifg=#cc0055               gui=bold
-    hi Keyword          guifg=#cc0055               gui=none
-    hi Exception        guifg=#cc0055               gui=bold
-    hi Operator         guifg=#cc0055               gui=none
-    hi StorageClass     guifg=#cc0055               gui=italic
+    hi PreProc          guifg=#003399               gui=bold
+    hi Include          guifg=#990033               gui=bold
+    hi Define           guifg=#006020               gui=bold
+    hi Macro            guifg=#006020               gui=none
+    hi PreCondit        guifg=#006020               gui=none
 
+    hi Statement        guifg=#990033               gui=bold
+    hi Conditional      guifg=#990033               gui=bold
+    hi Repeat           guifg=#990033               gui=bold
+    hi Label            guifg=#990033               gui=bold
+    hi clear Keyword
+    hi Keyword          guifg=#990033               gui=none
+    hi Exception        guifg=#990033               gui=bold
+    hi Operator         guifg=#990033               gui=none
 
-    hi Type             guifg=#0055cc               gui=none
-    hi Structure        guifg=#0055cc               gui=none
-    hi Typedef          guifg=#0055cc
-    hi Function         guifg=#0099cc               gui=none
+    hi Identifier       guifg=#007070               gui=none
+    hi Function         guifg=#005599               gui=none
 
-    hi String     guifg=#998811
-    hi Character  guifg=#998811
-    hi Number     guifg=#998811
-    hi Boolean    guifg=#998811
-    hi Float      guifg=#998811
+    hi Type             guifg=#0022aa               gui=none
+    hi Structure        guifg=#0022aa               gui=none
+    hi Typedef          guifg=#0022aa
+    hi StorageClass     guifg=#990033               gui=italic
 
-    hi Constant         guifg=#9010cc               gui=bold
-    hi Special          guifg=#9010cc               gui=none
-    hi SpecialChar      guifg=#9010cc
-    hi SpecialKey       guifg=#9010cc
-    hi Tag              guifg=#9010cc               gui=bold
-    hi Delimiter        guifg=#9010cc               gui=none
-    hi SpecialComment   guifg=#9010cc               gui=bold
-    hi Debug            guifg=#9010cc               gui=bold
+    hi String           guifg=#776600
+    hi Character        guifg=#776600
+    hi Number           guifg=#776600
+    hi Boolean          guifg=#776600
+    hi Float            guifg=#776600
+
+    hi Constant         guifg=#6000aa               gui=bold
+    hi Special          guifg=#6000aa               gui=none
+    hi SpecialChar      guifg=#6000aa
+    hi SpecialKey       guifg=#6000aa
+    hi Tag              guifg=#6000aa               gui=bold
+    hi Delimiter        guifg=#6000aa               gui=none
+    hi SpecialComment   guifg=#6000aa               gui=bold
+    hi Debug            guifg=#6000aa               gui=bold
+
+    hi Directory        guifg=#775500               gui=bold
 
     hi Cursor           guibg=#d0d0d0
-    hi CursorLine       guibg=#dddddd               gui=none
+    hi CursorLine       guibg=#cccccc               gui=none
     hi CursorLineNr     guibg=#202020               gui=bold
     hi CursorColumn     guibg=#aaaaaa
 
+    hi Pmenu            guifg=#111111 guibg=#ddddee
+    hi PmenuSel         guifg=#222222 guibg=#bbbbbb gui=none
+    hi PmenuSbar                      guibg=#a0a0a0
+    hi PmenuThumb                     guibg=#555555
+
+    hi SignColumn       guifg=#409000 guibg=#ddddee
 endif
 
 
