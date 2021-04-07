@@ -134,7 +134,7 @@ hi SpellLocal       guisp=#48b040 guibg=NONE gui=undercurl
 hi SpellRare        guisp=#eeeeee guibg=NONE gui=undercurl
 
 "UI
-hi Search           guifg=#000000 guibg=#777777 gui=bold
+hi Search           guifg=#000000 guibg=#bbbbbb gui=bold
 hi IncSearch        guifg=#000000 guibg=#777777 gui=none
 hi Error            guifg=#eeeeee guibg=#ff0088 gui=bold,underline
 hi ErrorMsg         guifg=#eeeeee guibg=#ff0088 gui=bold
@@ -144,7 +144,7 @@ hi Question         guifg=#000000 guibg=#000011
 hi MoreMsg          guifg=#000000 guibg=#000011
 hi ModeMsg          guifg=#000000
 hi Cursor           guibg=#d0d0d0
-hi CursorLine       guibg=#222222               gui=none
+hi CursorLine       guibg=#333333               gui=none
 hi CursorLineNr     guifg=#d0d0d0               gui=bold
 hi CursorColumn     guibg=#4a4a4c
 hi MatchParen       guifg=#202020               gui=none
@@ -180,11 +180,11 @@ if &background == "dark"
     hi PreCondit        guifg=#00e0a3               gui=none
 
     hi Constant         guifg=#c030ff               gui=bold
-    hi String           guifg=#ddff33
-    hi Character        guifg=#ddff33
-    hi Number           guifg=#ddff33
-    hi Boolean          guifg=#ddff33
-    hi Float            guifg=#ddff33
+    hi String           guifg=#eeff33
+    hi Character        guifg=#eeff33
+    hi Number           guifg=#eeff33
+    hi Boolean          guifg=#eeff33
+    hi Float            guifg=#eeff33
 
     hi Identifier       guifg=#29a3ac               gui=none
     hi Function         guifg=#00bbff               gui=none
@@ -214,52 +214,52 @@ if &background == "dark"
 
 
 else "light
-    hi Normal     guifg=#111111 guibg=#ddddee gui=none
+    hi Normal     guifg=#111111 guibg=#f0f0ee gui=none
     hi Comment    guifg=#666688
     hi Todo       guifg=#777710               gui=bold
 
     hi PreProc          guifg=#003399               gui=bold
-    hi Include          guifg=#990033               gui=bold
-    hi Define           guifg=#006020               gui=bold
-    hi Macro            guifg=#006020               gui=none
-    hi PreCondit        guifg=#006020               gui=none
+    hi Include          guifg=#ee0077               gui=bold
+    hi Define           guifg=#008833               gui=bold
+    hi Macro            guifg=#008833               gui=none
+    hi PreCondit        guifg=#008833               gui=none
 
-    hi Statement        guifg=#990033               gui=bold
-    hi Conditional      guifg=#990033               gui=bold
-    hi Repeat           guifg=#990033               gui=bold
-    hi Label            guifg=#990033               gui=bold
+    hi Statement        guifg=#ee0077               gui=bold
+    hi Conditional      guifg=#ee0077               gui=bold
+    hi Repeat           guifg=#ee0077               gui=bold
+    hi Label            guifg=#ee0077               gui=bold
     hi clear Keyword
-    hi Keyword          guifg=#990033               gui=none
-    hi Exception        guifg=#990033               gui=bold
-    hi Operator         guifg=#990033               gui=none
+    hi Keyword          guifg=#ee0077               gui=none
+    hi Exception        guifg=#ee0077               gui=bold
+    hi Operator         guifg=#ee0077               gui=none
 
-    hi Identifier       guifg=#007070               gui=none
-    hi Function         guifg=#005599               gui=none
+    hi Identifier       guifg=#008833               gui=none
+    hi Function         guifg=#0099cc               gui=none
 
-    hi Type             guifg=#0022aa               gui=none
-    hi Structure        guifg=#0022aa               gui=none
-    hi Typedef          guifg=#0022aa
-    hi StorageClass     guifg=#990033               gui=italic
+    hi Type             guifg=#0055ee               gui=none
+    hi Structure        guifg=#0055ee               gui=none
+    hi Typedef          guifg=#0055ee
+    hi StorageClass     guifg=#ee0077               gui=italic
 
-    hi String           guifg=#776600
-    hi Character        guifg=#776600
-    hi Number           guifg=#776600
-    hi Boolean          guifg=#776600
-    hi Float            guifg=#776600
+    hi String           guifg=#cc8800
+    hi Character        guifg=#cc8800
+    hi Number           guifg=#cc8800
+    hi Boolean          guifg=#cc8800
+    hi Float            guifg=#cc8800
 
-    hi Constant         guifg=#6000aa               gui=bold
-    hi Special          guifg=#6000aa               gui=none
-    hi SpecialChar      guifg=#6000aa
-    hi SpecialKey       guifg=#6000aa
-    hi Tag              guifg=#6000aa               gui=bold
-    hi Delimiter        guifg=#6000aa               gui=none
-    hi SpecialComment   guifg=#6000aa               gui=bold
-    hi Debug            guifg=#6000aa               gui=bold
+    hi Constant         guifg=#8000cc               gui=bold
+    hi Special          guifg=#8000cc               gui=none
+    hi SpecialChar      guifg=#8000cc
+    hi SpecialKey       guifg=#8000cc
+    hi Tag              guifg=#8000cc               gui=bold
+    hi Delimiter        guifg=#8000cc               gui=none
+    hi SpecialComment   guifg=#8000cc               gui=bold
+    hi Debug            guifg=#8000cc               gui=bold
 
-    hi Directory        guifg=#775500               gui=bold
+    hi Directory        guifg=#cc8800               gui=bold
 
     hi Cursor           guibg=#d0d0d0
-    hi CursorLine       guibg=#cccccc               gui=none
+    hi CursorLine       guibg=#dddddd               gui=none
     hi CursorLineNr     guibg=#202020               gui=bold
     hi CursorColumn     guibg=#aaaaaa
 
