@@ -139,10 +139,10 @@ hi IncSearch        guifg=#000000 guibg=#777777 gui=none
 hi Error            guifg=#eeeeee guibg=#ff0088 gui=bold,underline
 hi ErrorMsg         guifg=#eeeeee guibg=#ff0088 gui=bold
 hi WarningMsg       guifg=#000000 guibg=#fff633
-hi WildMenu         guifg=#000000 guibg=#000011
-hi Question         guifg=#000000 guibg=#000011
-hi MoreMsg          guifg=#000000 guibg=#000011
-hi ModeMsg          guifg=#000000
+hi WildMenu         guifg=#ffffff guibg=#000011
+hi Question         guifg=#ffffff guibg=#000011
+hi MoreMsg          guifg=#eeff33 guibg=#000011
+hi ModeMsg          guifg=#eeff33
 hi Cursor           guibg=#d0d0d0
 hi CursorLine       guibg=#333333               gui=none
 hi CursorLineNr     guifg=#d0d0d0               gui=bold
