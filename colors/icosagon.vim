@@ -143,17 +143,9 @@ hi WildMenu         guifg=#ffffff guibg=#000011
 hi Question         guifg=#ffffff guibg=#000011
 hi MoreMsg          guifg=#eeff33 guibg=#000011
 hi ModeMsg          guifg=#eeff33
-hi Cursor           guibg=#d0d0d0
-hi CursorLine       guibg=#333333               gui=none
-hi CursorLineNr     guifg=#d0d0d0               gui=bold
-hi CursorColumn     guibg=#4a4a4c
 hi MatchParen       guifg=#202020               gui=none
 hi Visual           guibg=#3a4d6e               gui=none
 hi VisualNOS                                    gui=none
-hi Pmenu            guifg=#b5b5b5 guibg=#000000
-hi PmenuSel         guifg=#ffffff guibg=#777777 gui=none
-hi PmenuSbar                      guibg=#a0a0a0
-hi PmenuThumb                     guibg=#555555
 hi SignColumn       guifg=#A6E22E guibg=#000011
 hi FoldColumn       guifg=#b0b8c0               gui=bold
 hi Folded           guifg=#727780               gui=none
@@ -211,6 +203,16 @@ if &background == "dark"
     hi Debug            guifg=#c030ff               gui=bold
 
     hi Underlined       guifg=NONE                  gui=underline
+
+    hi Cursor           guibg=#d0d0d0
+    hi CursorLine       guibg=#333333               gui=none
+    hi CursorLineNr     guifg=#d0d0d0               gui=bold
+    hi CursorColumn     guibg=#4a4a4c
+
+    hi Pmenu            guifg=#b5b5b5 guibg=#000000
+    hi PmenuSel         guifg=#ffffff guibg=#777777 gui=none
+    hi PmenuSbar                      guibg=#a0a0a0
+    hi PmenuThumb                     guibg=#555555
 
 
 else "light
