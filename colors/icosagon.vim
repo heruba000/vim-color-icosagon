@@ -151,7 +151,7 @@ hi FoldColumn       guifg=#b0b8c0               gui=bold
 hi Folded           guifg=#727780               gui=none
 hi NonText          guifg=#958b7f               gui=none
 hi Conceal          guifg=#f6f3e8
-hi LineNr           guifg=#554400               gui=none
+hi LineNr           guifg=#335566               gui=none
 hi StatusLine       guifg=#b5b5b5               gui=none term=none cterm=none
 hi StatusLineNC     guifg=#857b6f               gui=none
 hi VertSplit        guifg=#222222               gui=none
@@ -171,7 +171,7 @@ if &background == "dark"
     hi Macro            guifg=#00e0a3               gui=none
     hi PreCondit        guifg=#00e0a3               gui=none
 
-    hi Constant         guifg=#c030ff               gui=bold
+    hi Constant         guifg=#cc33ff               gui=bold
     hi String           guifg=#eeff33
     hi Character        guifg=#eeff33
     hi Number           guifg=#eeff33
@@ -189,18 +189,18 @@ if &background == "dark"
     hi Exception        guifg=#ff0088               gui=bold
     hi Operator         guifg=#ff0088               gui=none
 
-    hi Type             guifg=#0088ff               gui=none
-    hi Structure        guifg=#0088ff               gui=none
-    hi Typedef          guifg=#0088ff
+    hi Type             guifg=#0099ff               gui=none
+    hi Structure        guifg=#0099ff               gui=none
+    hi Typedef          guifg=#0099ff
     hi StorageClass     guifg=#ff0088               gui=italic
 
-    hi Special          guifg=#c030ff               gui=none
-    hi SpecialChar      guifg=#c030ff
-    hi SpecialKey       guifg=#c030ff
-    hi Tag              guifg=#c030ff               gui=bold
-    hi Delimiter        guifg=#c030ff               gui=none
-    hi SpecialComment   guifg=#c030ff               gui=bold
-    hi Debug            guifg=#c030ff               gui=bold
+    hi Special          guifg=#cc33ff               gui=none
+    hi SpecialChar      guifg=#cc33ff
+    hi SpecialKey       guifg=#cc33ff
+    hi Tag              guifg=#cc33ff               gui=bold
+    hi Delimiter        guifg=#cc33ff               gui=none
+    hi SpecialComment   guifg=#cc33ff               gui=bold
+    hi Debug            guifg=#cc33ff               gui=bold
 
     hi Underlined       guifg=NONE                  gui=underline
 
@@ -214,6 +214,20 @@ if &background == "dark"
     hi PmenuSbar                      guibg=#a0a0a0
     hi PmenuThumb                     guibg=#555555
 
+    hi markdownH1                guifg=#ff0088               gui=none
+    hi markdownH2                guifg=#ff0088               gui=none
+    hi markdownH3                guifg=#ff0088               gui=none
+    hi markdownH4                guifg=#ff0088               gui=none
+    hi markdownH5                guifg=#ff0088               gui=none
+    hi markdownH6                guifg=#ff0088               gui=none
+    hi markdownHeadingRule       guifg=#ff0088               gui=none
+    hi markdownHeadingDelimiter  guifg=#ff0088               gui=none
+    hi markdownBold              guibg=#444444               gui=bold cterm=bold
+    hi markdownBoldDelimiter     guibg=#444444               gui=bold cterm=bold
+    hi markdownListMarker        guifg=#cc33ff               gui=none
+    hi markdownCodeDelimiter     guifg=#cc33ff               gui=none
+    hi markdownOrderedListMarker guifg=#cc33ff               gui=none
+    hi markdownCodeBlock         guifg=#00bbff               gui=none
 
 else "light
     hi Normal     guifg=#111111 guibg=#f0f0ee gui=none
