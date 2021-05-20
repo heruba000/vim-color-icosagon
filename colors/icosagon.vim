@@ -229,6 +229,9 @@ if &background == "dark"
     hi markdownOrderedListMarker guifg=#cc33ff               gui=none
     hi markdownCodeBlock         guifg=#00bbff               gui=none
 
+    hi ALEErrorSign              guifg=#ff0088               gui=none
+    hi ALEWarningSign            guifg=#eeff33               gui=none
+
 else "light
     hi Normal     guifg=#111111 guibg=#f0f0ee gui=none
     hi Comment    guifg=#666688
