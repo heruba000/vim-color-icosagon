@@ -161,7 +161,14 @@ hi TabLineSel       guifg=#005f00               gui=none
 hi TabLineFill      guifg=#303030               gui=none
 
 if &background == "dark"
-    hi Normal     guifg=#ffffff guibg=#111122 gui=none
+    let g:terminal_ansi_colors = [
+                \ "#111122", "#ff0088", "#0f8d64", "#eeff33",
+                \ "#00bbff", "#881798", "#359fcf", "#cccccc",
+                \ "#767676", "#e74856", "#88b422", "#fff63f",
+                \ "#0099ff", "#cc33ff", "#44bfe0", "#e8e8e8"
+                \ ]
+
+    hi Normal     guifg=#ffffff guibg=#0a0a1f gui=none
     hi Comment    guifg=#555577
     hi Todo       guifg=#fff63f               gui=bold
 
